@@ -1,4 +1,4 @@
-name: CONTINOUS_INTEGRATION
+name: continious_integration
  
 on:
   push
@@ -6,7 +6,7 @@ on:
 env:
   DOCKER_USERNAME: ${{vars.DOCKER_USERNAME}}
   DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
-  DOCKER_IMAGE: jattiinnn/MY_PYTHON_FILE
+  DOCKER_IMAGE: jattiinnn/my_python_file
 jobs:
   build-using-docker:
     runs-on: ubuntu-latest
